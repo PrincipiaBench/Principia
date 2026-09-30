@@ -76,6 +76,13 @@ it using the same scenario and sample names:
 Scenarios or samples that are missing are skipped. To average over seeds,
 write each seed to its own model directory.
 
+The text prompts used for generation are in [`prompts.json`](prompts.json),
+keyed by scenario. `gravity` has no entry because it is scored from the
+`restitution` videos. `conservation_of_momentum` has two prompts: use
+`same_height_different_mass` for samples where the balls start at the same
+height, and `different_height_same_mass` for samples where they start at
+different heights.
+
 ## Evaluation
 
 Run all the stages on one model:
