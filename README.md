@@ -2,7 +2,9 @@
 
 **A benchmark for physical consistency in video generation models.**
 
+[![Website](https://img.shields.io/badge/Website-PrincipiaBench-blue)](https://principiabench.github.io/)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Principia-yellow)](https://huggingface.co/datasets/varunvarmat/Principia)
+[![Synth Code](https://img.shields.io/badge/GitHub-Principia--Synth-black?logo=github)](https://github.com/PrincipiaBench/Principia-Synth)
 
 <p align="center">
   <img src="assets/teaser.png" alt="Principia overview" width="90%">
@@ -30,7 +32,7 @@ checked against the relationship physics predicts between the two objects.
 ## Installation
 
 ```bash
-git clone https://github.com/<org>/Principia.git
+git clone https://github.com/PrincipiaBench/Principia.git
 cd Principia
 pip install -r requirements.txt
 ```
