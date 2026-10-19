@@ -80,10 +80,14 @@ write each seed to its own model directory.
 
 The text prompts used for generation are in [`prompts.json`](prompts.json),
 keyed by scenario. `gravity` has no entry because it is scored from the
-`restitution` videos. `conservation_of_momentum` has two prompts: use
-`same_height_different_mass` for samples where the balls start at the same
-height, and `different_height_same_mass` for samples where they start at
-different heights.
+`restitution` videos.
+
+`conservation_of_momentum` has two kinds of samples, each with its own prompt:
+
+| Samples | Setup | Prompt key in `prompts.json` |
+|---|---|---|
+| `sample_1`–`sample_6`, `sample_35`–`sample_40` (12) | Balls at the same height, blocks of different masses | `same_height_different_mass` |
+| `sample_7`–`sample_34`, `sample_41`–`sample_56` (44) | Balls at different heights, blocks of the same mass | `different_height_same_mass` |
 
 ## Evaluation
 
